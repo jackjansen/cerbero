@@ -359,6 +359,14 @@ class Config (object):
         return {}
 
     def cross_compiling(self):
+        if self.target_platform != self.platform:
+            return False
+        if self.target_arch == self.arch:
+            return True
+        if self.target_arch == Architecture.UNIVERSAL and \
+                self.target_arch in self.universal_archs:
+            return True
+        return False
         return self.target_platform != self.platform or \
                 self.target_arch != self.arch
 
