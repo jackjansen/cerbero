@@ -39,6 +39,7 @@ class Recipe(recipe.Recipe):
         'lib/gobject-introspection/giscanner/annotationparser.py',
         'lib/gobject-introspection/giscanner/ast.py',
         'lib/gobject-introspection/giscanner/cachestore.py',
+        'lib/gobject-introspection/giscanner/ccompiler.py',
         'lib/gobject-introspection/giscanner/codegen.py',
         'lib/gobject-introspection/giscanner/collections/__init__.py',
         'lib/gobject-introspection/giscanner/collections/counter.py',
