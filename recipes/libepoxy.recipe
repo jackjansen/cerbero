@@ -3,8 +3,15 @@
 class Recipe(recipe.Recipe):
     name = 'libepoxy'
     version = '1.2'
-    stype = SourceType.TARBALL
-    url = 'https://github.com/anholt/libepoxy/archive/v%(version)s.tar.gz'
+    #stype = SourceType.TARBALL
+    #url = 'https://github.com/anholt/libepoxy/archive/v%(version)s.tar.gz'
+    
+    stype = SourceType.GIT
+    remotes = {
+    	'origin' : 'https://github.com/anholt/libepoxy.git'
+    }
+    commit = 'd9df59df711d4bf9fa9f309ab3b1c880f07c2883'
+    
     licenses = [License.MIT]
     config_sh = 'sh autogen.sh'
     use_system_libs = True
