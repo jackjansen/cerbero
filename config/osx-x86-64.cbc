@@ -3,3 +3,4 @@ from cerbero.config import Architecture
 target_arch=Architecture.X86_64
 prefix='/Library/Frameworks/GStreamer.framework/Versions/1.0'
 
+variants.append('gtk3')
