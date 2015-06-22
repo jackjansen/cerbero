@@ -34,8 +34,8 @@ class SDKPackage(package.SDKPackage):
                ('gstreamer-1.0-capture', False, False),
                ('gstreamer-1.0-editing', False, False),
                ('gstreamer-1.0-devtools', False, False),
+               ('gstreamer-1.0-python', False, False),
                ('gtk-3.0', False, False),
-               ('python-bindings', False, False),
               ]
     platform_packages = {
             Platform.WINDOWS: [
